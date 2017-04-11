@@ -1,0 +1,76 @@
+<resources>
+    <string name="app_name">QuizzApp</string>
+    <string name="name">Name</string>
+    <string name="email">E-mail</string>
+    <string name="take_the_quiz">Take the quiz!</string>
+    <string name="welcome">Welcome, \n \nHere are ten lines from the repertoire of Bruce Springsteen. Can you guess the song?</string>
+    <string name="mail_results">Send results!</string>
+    <!-- Final text follow this patters "congratualations_part1" + "player Name" + "congratulations_part2"
+    + " number of questions answered correct" + "congratulations_part3" -->
+    <string name="congratulations_part1">Congratulations </string>
+    <string name="congratulations_part2">You answered </string>
+    <string name="congratulations_part3">out of 10 correct</string>
+    // These are the questions
+
+    //Question 1
+    <string name="q1q">Question 1: \n \nI\'m sick of sitting \'round here trying to write this book</string>
+    <string name="q1a1">I\'m On Fire</string>
+    <string name="q1a2">Dancing In The Dark</string>
+    <string name="q1a3">Born To Run</string>
+    <string name="q1ca">Dancing In The Dark</string>
+    //Question 2
+    <string name="q2q">Question 2: \n \nI\'m laughing at you, you\'re laughing at me</string>
+    <string name="q2a1">Fade Away</string>
+    <string name="q2a2">Tunnel Of Love</string>
+    <string name="q2a3">One Step Up</string>
+    <string name="q2ca">Tunnel Of Love</string>
+    //Question 3
+    <string name="q3q">Question 3: \n \nI didn\'t know my own face</string>
+    <string name="q3a1">Born In The USA</string>
+    <string name="q3a2">One Step Up</string>
+    <string name="q3a3">Streets of Philadelphia</string>
+    <string name="q3ca">Streets of Philadelphia</string>
+    //Question 4
+    <string name="q4q">Question 4: \n \nI want to guard your dreams and visions</string>
+    <string name="q4a1">War</string>
+    <string name="q4a2">Born To Run</string>
+    <string name="q4a3">Waitin\' On A Sunny Day</string>
+    <string name="q4ca">Born To Run</string>
+    // Question 5
+    <string name="q5q">Question 5: \n \nPromise me baby you won\'t let them find us</string>
+    <string name="q5a1">Cover Me</string>
+    <string name="q5a2">Secret Garden</string>
+    <string name="q5a3">Human Touch</string>
+    <string name="q5ca">Cover Me</string>
+    // Question 6
+    <string name="q6q">Question 6: \n \nI guess it\'s two years gone by now</string>
+    <string name="q6a1">Santa Claus Is Comin\' to Town</string>
+    <string name="q6a2">Glory Days</string>
+    <string name="q6a3">Born In The USA</string>
+    <string name="q6ca">Glory Days</string>
+    // Question 7
+    <string name="q7q">Question 7: \n \nYou and me, we were the pretenders</string>
+    <string name="q7a1">Human Touch</string>
+    <string name="q7a2">Tunnel Of Love</string>
+    <string name="q7a3">Dancing In The Dark</string>
+    <string name="q7ca">Human Touch</string>
+    // Question 8
+    <string name="q8q">Question 8: \n \nYou end up like a dog that\'s been beat too much</string>
+    <string name="q8a1">Streets of Philadelphia</string>
+    <string name="q8a2">War</string>
+    <string name="q8a3">Born In The USA</string>
+    <string name="q8ca">Born In The USA</string>
+    // Question 9
+    <string name="q9q">Question 9: \n \nNo wedding day smiles, no walk down the aisle</string>
+    <string name="q9a1">Cover Me</string>
+    <string name="q9a2">Waitin\' On A Sunny Day</string>
+    <string name="q9a3">The River</string>
+    <string name="q9ca">The River</string>
+    // Question 10
+    <string name="q10q">Question 10: \n \nI saw you last night, out on the edge of town</string>
+    <string name="q10a1">Brilliant Disguise</string>
+    <string name="q10a2">One Step Up</string>
+    <string name="q10a3">Fade Away</string>
+    <string name="q10ca">Brilliant Disguise</string>
+
+</resources>

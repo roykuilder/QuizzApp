@@ -1,0 +1,35 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="answer" parent="Theme.AppCompat.Light">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">#EFEBE9</item>
+        <item name="android:layout_marginLeft">58dp</item>
+        <item name="android:layout_marginRight">58dp</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+    </style>
+
+    <style name="question" parent="Theme.AppCompat.Light">
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_margin">48dp</item>
+        <item name="android:background">#E0F7FA</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:padding">4dp</item>
+    </style>
+
+    <style name="checkbox" parent="Theme.AppCompat.Light">
+        <item name="android:layout_height">@dimen/spacing_normal</item>
+        <item name="android:layout_width">@dimen/spacing_normal</item>
+        <item name="android:background">#E0F7FA</item>
+        <item name="android:layout_marginRight">@dimen/spacing_normal</item>
+    </style>
+
+</resources>
