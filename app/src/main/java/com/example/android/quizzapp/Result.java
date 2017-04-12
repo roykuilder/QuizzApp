@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import static android.media.CamcorderProfile.get;
@@ -22,6 +23,9 @@ public class Result extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ImageView background = (ImageView) findViewById(R.id.background_image);
+        background.setImageResource(R.drawable.bruce3);
 
         /**
          * This is the counter for the questions that are correct. The number is stored in result.

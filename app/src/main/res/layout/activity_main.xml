@@ -4,20 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+<ImageView
+    android:id="@+id/background_image"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:src="@drawable/bruce1"
+    android:scaleType="centerCrop"/>
+
 <LinearLayout
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.quizzapp.MainActivity"
-    android:orientation="vertical"
-    android:background="@color/background">
+    android:orientation="vertical">
 
     <TextView
         android:id="@+id/main_view"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
         android:text="@string/welcome"
-        style="@style/question"/>
+        style="@style/question" />
 
     <EditText
         android:id="@+id/name_input"
@@ -29,6 +34,7 @@
         android:id="@+id/email_input"
         android:layout_height="wrap_content"
         android:hint="@string/email"
+        android:inputType="textEmailAddress"
         style="@style/answer"/>
 
 
@@ -42,6 +48,6 @@
         android:text="@string/take_the_quiz"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="24dp"/>
+        android:layout_marginBottom="24dp" />
 
 </RelativeLayout>

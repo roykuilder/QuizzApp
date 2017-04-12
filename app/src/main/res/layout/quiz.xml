@@ -4,27 +4,32 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/background_image_quiz"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bruce2"
+        android:scaleType="centerCrop"/>
+
     <LinearLayout
         android:id="@+id/quiz_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context="com.example.android.quizzapp.MainActivity"
-        android:orientation="vertical"
-        android:background="@color/background">
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/question"
             android:layout_width="wrap_content"
-            android:layout_height="200dp"
             android:text="@string/q1q"
-            style="@style/question"/>
+            style="@style/question" />
 
         <TextView
             android:id="@+id/answer1"
             android:layout_height="wrap_content"
             tools:text="@string/q1a1"
             android:onClick="scoring"
-            style="@style/answer"/>
+            style="@style/answer" />
 
         <TextView
             android:id="@+id/answer2"
