@@ -13,9 +13,6 @@ import static android.media.CamcorderProfile.get;
 import static com.example.android.quizzapp.MainActivity.emailValue;
 import static com.example.android.quizzapp.MainActivity.nameValue;
 
-/**
- * Created by Kuilder on 11-04-17.
- */
 
 public class Result extends AppCompatActivity {
 
@@ -32,11 +29,12 @@ public class Result extends AppCompatActivity {
          */
 
         int result = 0;
-        for (int i = 0; i <Quiz.score.length; i++) {
+        for (int i = 0; i < Quiz.score.length; i++) {
             if (Quiz.score[i]) {
                 result++;
             }
         }
+        result = result + BonusQuestions.bonusQuestionScore;
 
         /**
          * Here is the construction of the final text. It take in two variables
@@ -45,10 +43,10 @@ public class Result extends AppCompatActivity {
          */
         TextView mainView = (TextView) findViewById(R.id.main_view);
         final String congratulations = getResources().getString(R.string.congratulations_part1) + " "
-                                + MainActivity.nameValue + "!" + "\n \n"
-                                + getResources().getString(R.string.congratulations_part2) + " "
-                                + result
-                                + getResources().getString(R.string.congratulations_part3);
+                + MainActivity.nameValue + "!" + "\n \n"
+                + getResources().getString(R.string.congratulations_part2) + " "
+                + result
+                + getResources().getString(R.string.congratulations_part3);
         mainView.setText(congratulations);
 
         /**
@@ -67,7 +65,7 @@ public class Result extends AppCompatActivity {
          * This is the emailIntent for the send email button.
          */
         Intent sendEmail = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                "mailto",emailValue, null));
+                "mailto", emailValue, null));
         sendEmail.putExtra(Intent.EXTRA_SUBJECT, "Subject");
         sendEmail.putExtra(Intent.EXTRA_TEXT, congratulations);
 
@@ -75,7 +73,7 @@ public class Result extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent sendEmail = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
-                        "mailto",emailValue, null));
+                        "mailto", emailValue, null));
                 sendEmail.putExtra(Intent.EXTRA_SUBJECT, "Subject");
                 sendEmail.putExtra(Intent.EXTRA_TEXT, congratulations);
                 startActivity(Intent.createChooser(sendEmail, "Send email..."));

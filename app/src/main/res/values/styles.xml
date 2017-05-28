@@ -35,4 +35,14 @@
         <item name="android:layout_marginRight">@dimen/spacing_normal</item>
     </style>
 
+    <style name="answer_radio" parent="Theme.AppCompat.Light">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/texView_background</item>
+        <item name="android:layout_marginLeft">@dimen/radio_margin</item>
+        <item name="android:layout_marginRight">@dimen/answer_margin</item>
+        <item name="android:textSize">@dimen/small_textSize</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:paddingLeft">@dimen/spacing_normal</item>
+    </style>
+
 </resources>

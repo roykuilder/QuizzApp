@@ -4,50 +4,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<ImageView
-    android:id="@+id/background_image"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:src="@drawable/bruce1"
-    android:scaleType="centerCrop"/>
-
-<LinearLayout
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.android.quizzapp.MainActivity"
-    android:orientation="vertical">
-
-    <TextView
-        android:id="@+id/main_view"
+    <ImageView
+        android:id="@+id/background_image"
         android:layout_width="match_parent"
-        android:text="@string/welcome"
-        style="@style/question" />
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bruce1" />
 
-    <EditText
-        android:id="@+id/name_input"
-        android:layout_height="wrap_content"
-        android:hint="@string/name"
-        style="@style/answer" />
+    <LinearLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.android.quizzapp.MainActivity">
 
-    <EditText
-        android:id="@+id/email_input"
-        android:layout_height="wrap_content"
-        android:hint="@string/email"
-        android:inputType="textEmailAddress"
-        style="@style/answer"/>
+        <TextView
+            android:id="@+id/main_view"
+            style="@style/question"
+            android:layout_width="match_parent"
+            android:text="@string/welcome" />
+
+        <EditText
+            android:id="@+id/name_input"
+            style="@style/answer"
+            android:layout_height="wrap_content"
+            android:hint="@string/name" />
+
+        <EditText
+            android:id="@+id/email_input"
+            style="@style/answer"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
 
 
-
-</LinearLayout>
+    </LinearLayout>
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/take_the_quiz"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="24dp" />
+        android:layout_marginBottom="24dp"
+        android:text="@string/take_the_quiz" />
 
 </RelativeLayout>

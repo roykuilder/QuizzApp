@@ -25,7 +25,7 @@ import static com.example.android.quizzapp.R.style.question;
  * Created by Kuilder on 08-04-17.
  */
 
-public class Quiz extends AppCompatActivity{
+public class Quiz extends AppCompatActivity {
 
     /**
      * variable are declared here so they are global.
@@ -81,18 +81,18 @@ public class Quiz extends AppCompatActivity{
     /**
      * This method is called when one of the answers is clicked. It takes in the id of the view and switches to the right action.
      * It compares the value of the answer given and the correct answer from the quizData[Question].
+     *
      * @param view
      */
-    public void scoring(View view){
+    public void scoring(View view) {
         switch (view.getId()) {
             case answer1:
-                if(getResources().getString(quizData.get(currentQuestion).getAnswer1()).equals(getResources().getString(quizData.get(currentQuestion).getCorrectAnswer()))){
-                   score[currentQuestion] = true;
+                if (getResources().getString(quizData.get(currentQuestion).getAnswer1()).equals(getResources().getString(quizData.get(currentQuestion).getCorrectAnswer()))) {
+                    score[currentQuestion] = true;
                     logB();
                     currentQuestion++;
                     update();
-                }
-                else {
+                } else {
                     score[currentQuestion] = false;
                     logB();
                     currentQuestion++;
@@ -102,29 +102,27 @@ public class Quiz extends AppCompatActivity{
 
 
             case R.id.answer2:
-               if(getResources().getString(quizData.get(currentQuestion).getAnswer2()).equals(getResources().getString(quizData.get(currentQuestion).getCorrectAnswer()))){
-                   score[currentQuestion] = true;
-                   logB();
-                   currentQuestion++;
-                   update();
-               }
-               else {
-                   score[currentQuestion] = false;
-                   logB();
-                   currentQuestion++;
-                   update();
-               }
-                break;
-
-
-            case R.id.answer3:
-                if(getResources().getString(quizData.get(currentQuestion).getAnswer3()).equals(getResources().getString(quizData.get(currentQuestion).getCorrectAnswer()))){
+                if (getResources().getString(quizData.get(currentQuestion).getAnswer2()).equals(getResources().getString(quizData.get(currentQuestion).getCorrectAnswer()))) {
                     score[currentQuestion] = true;
                     logB();
                     currentQuestion++;
                     update();
+                } else {
+                    score[currentQuestion] = false;
+                    logB();
+                    currentQuestion++;
+                    update();
                 }
-                else {
+                break;
+
+
+            case R.id.answer3:
+                if (getResources().getString(quizData.get(currentQuestion).getAnswer3()).equals(getResources().getString(quizData.get(currentQuestion).getCorrectAnswer()))) {
+                    score[currentQuestion] = true;
+                    logB();
+                    currentQuestion++;
+                    update();
+                } else {
                     score[currentQuestion] = false;
                     logB();
                     currentQuestion++;
@@ -139,11 +137,10 @@ public class Quiz extends AppCompatActivity{
     /**
      * This method updates the Views to the next question from the ArrayList quizData.
      */
-    public void update(){
-        if(currentQuestion == quizData.size()) {
-            result();
-        }
-        else {
+    public void update() {
+        if (currentQuestion == quizData.size()) {
+            bonusQuestions();
+        } else {
             TextView answer1 = (TextView) findViewById(R.id.answer1);
             TextView answer2 = (TextView) findViewById(R.id.answer2);
             TextView answer3 = (TextView) findViewById(R.id.answer3);
@@ -167,7 +164,7 @@ public class Quiz extends AppCompatActivity{
      * This method is used to check the behavior of the app while answering the questions.
      * It is not needed anymore but i leave it in here as a reminder.
      */
-    public void logB(){
+    public void logB() {
         Boolean mScore = score[currentQuestion];
         String mValue = mScore.toString();
         Log.v("score value", "score " + mValue);
@@ -176,8 +173,8 @@ public class Quiz extends AppCompatActivity{
     /**
      * This method is called when there are no more questions
      */
-    public void result(){
-        Intent resultPage = new Intent(Quiz.this, Result.class);
+    public void bonusQuestions() {
+        Intent resultPage = new Intent(Quiz.this, BonusQuestions.class);
         startActivity(resultPage);
     }
 }

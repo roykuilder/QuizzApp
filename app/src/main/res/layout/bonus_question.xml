@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bruce1" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="com.example.android.quizzapp.MainActivity">
+
+                <TextView
+                    android:id="@+id/main_view"
+                    style="@style/question"
+                    android:layout_width="match_parent"
+                    android:text="@string/bonus_question" />
+
+                <TextView
+                    style="@style/answer"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bonus_question_3" />
+
+                <CheckBox
+                    android:id="@+id/album_checkbox1"
+                    style="@style/answer_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The River" />
+
+                <CheckBox
+                    android:id="@+id/album_checkbox2"
+                    style="@style/answer_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Joshua Tree" />
+
+                <CheckBox
+                    android:id="@+id/album_checkbox3"
+                    style="@style/answer_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Human Touch" />
+
+                <CheckBox
+                    android:id="@+id/album_checkbox4"
+                    style="@style/answer_radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="The Wall" />
+
+                <TextView
+                    android:id="@+id/name_input"
+                    style="@style/answer"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bonus_question_1" />
+
+                <RadioGroup
+                    android:id="@+id/radio_group1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radio_button_1"
+                        style="@style/answer_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New York" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_2"
+                        style="@style/answer_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Jersey" />
+
+                    <RadioButton
+                        android:id="@+id/radio_button_3"
+                        style="@style/answer_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Foundland" />
+                </RadioGroup>
+
+
+                <TextView
+                    style="@style/answer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bonus_question_2" />
+
+                <EditText
+                    android:id="@+id/album_number_input"
+                    style="@style/answer"
+                    android:layout_height="wrap_content"
+                    android:inputType="number" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/check_bonus_questions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:text="@string/check" />
+
+
+                    <Button
+                        android:id="@+id/button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:text="@string/to_results" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -4,4 +4,6 @@
     <color name="colorPrimaryDark">#99760f</color>
     <color name="colorAccent">#FF4081</color>
     <color name="texView_background">#BBEFEBE9</color>
+    <color name="background_correct">#58C44A</color>
+    <color name="background_false">#c4313f</color>
 </resources>

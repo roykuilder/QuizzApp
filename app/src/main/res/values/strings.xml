@@ -9,7 +9,14 @@
     + " number of questions answered correct" + "congratulations_part3" -->
     <string name="congratulations_part1">Congratulations </string>
     <string name="congratulations_part2">You answered </string>
-    <string name="congratulations_part3">out of 10 correct</string>
+    <string name="congratulations_part3"> out of 13 correct</string>
+
+    <string name="bonus_question">Well done so far!\n\nHere are three bonus questions to really test your knowledge of Bruce Springsteen.</string>
+    <string name="bonus_question_1">In which city was Bruce Springsteen born?</string>
+    <string name="bonus_question_2">How many albums did Bruce Springsteen?</string>
+    <string name="to_results">To the results!</string>
+    <string name="check">check!</string>
+    <string name="bonus_question_3">Whicht of these album are made by Bruce?</string>
     // These are the questions
 
     //Question 1
@@ -72,5 +79,6 @@
     <string name="q10a2">One Step Up</string>
     <string name="q10a3">Fade Away</string>
     <string name="q10ca">Brilliant Disguise</string>
+
 
 </resources>
