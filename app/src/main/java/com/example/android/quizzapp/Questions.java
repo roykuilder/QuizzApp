@@ -1,8 +1,5 @@
 package com.example.android.quizzapp;
 
-import android.support.v7.app.AppCompatActivity;
-
-
 public class Questions {
 
     private int mQuestion;

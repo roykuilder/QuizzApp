@@ -6,8 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
-import static com.example.android.quizzapp.R.layout.quiz;
-
 public class MainActivity extends AppCompatActivity {
 
     /**

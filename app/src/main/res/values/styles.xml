@@ -30,7 +30,7 @@
 
     <style name="checkbox" parent="Theme.AppCompat.Light">
         <item name="android:layout_height">@dimen/spacing_normal</item>
-        <item name="android:layout_width">@dimen/spacing_normal</item>
+        <item name="android:layout_width">@dimen/spacing_double</item>
         <item name="android:background">@color/texView_background</item>
         <item name="android:layout_marginRight">@dimen/spacing_normal</item>
     </style>

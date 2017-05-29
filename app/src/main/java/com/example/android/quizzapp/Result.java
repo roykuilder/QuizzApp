@@ -9,7 +9,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import static android.media.CamcorderProfile.get;
+import static com.example.android.quizzapp.BonusQuestions.congratulations;
 import static com.example.android.quizzapp.MainActivity.emailValue;
 import static com.example.android.quizzapp.MainActivity.nameValue;
 
@@ -25,29 +25,12 @@ public class Result extends AppCompatActivity {
         background.setImageResource(R.drawable.bruce3);
 
         /**
-         * This is the counter for the questions that are correct. The number is stored in result.
-         */
-
-        int result = 0;
-        for (int i = 0; i < Quiz.score.length; i++) {
-            if (Quiz.score[i]) {
-                result++;
-            }
-        }
-        result = result + BonusQuestions.bonusQuestionScore;
-
-        /**
          * Here is the construction of the final text. It take in two variables
          * - nameValue - for the name of the person taking the quiz
          * - result - for the amount of good answers
          */
         TextView mainView = (TextView) findViewById(R.id.main_view);
-        final String congratulations = getResources().getString(R.string.congratulations_part1) + " "
-                + MainActivity.nameValue + "!" + "\n \n"
-                + getResources().getString(R.string.congratulations_part2) + " "
-                + result
-                + getResources().getString(R.string.congratulations_part3);
-        mainView.setText(congratulations);
+        mainView.setText(BonusQuestions.congratulations);
 
         /**
          * The text for the different view is taken from strings and variables from the first screen.

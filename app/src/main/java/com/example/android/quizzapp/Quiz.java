@@ -1,8 +1,6 @@
 package com.example.android.quizzapp;
 
 import android.content.Intent;
-import android.content.res.Resources;
-import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -10,20 +8,9 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import java.lang.reflect.Array;
-import java.lang.reflect.Field;
 import java.util.ArrayList;
 
-import static android.R.attr.breadCrumbShortTitle;
-import static android.R.attr.value;
-import static android.media.CamcorderProfile.get;
 import static com.example.android.quizzapp.R.id.answer1;
-import static com.example.android.quizzapp.R.layout.quiz;
-import static com.example.android.quizzapp.R.style.question;
-
-/**
- * Created by Kuilder on 08-04-17.
- */
 
 public class Quiz extends AppCompatActivity {
 
@@ -33,7 +20,7 @@ public class Quiz extends AppCompatActivity {
 
     ArrayList<Questions> quizData;
     int[] mCheckbox;
-    public static boolean[] score = new boolean[10];
+    public static boolean[] score = new boolean[7];
     int currentQuestion = 0;
 
     @Override
@@ -53,9 +40,6 @@ public class Quiz extends AppCompatActivity {
         quizData.add(new Questions(R.string.q5q, R.string.q5a1, R.string.q5a2, R.string.q5a3, R.string.q5ca));
         quizData.add(new Questions(R.string.q6q, R.string.q6a1, R.string.q6a2, R.string.q6a3, R.string.q6ca));
         quizData.add(new Questions(R.string.q7q, R.string.q7a1, R.string.q7a2, R.string.q7a3, R.string.q7ca));
-        quizData.add(new Questions(R.string.q8q, R.string.q8a1, R.string.q8a2, R.string.q8a3, R.string.q8ca));
-        quizData.add(new Questions(R.string.q9q, R.string.q9a1, R.string.q9a2, R.string.q9a3, R.string.q9ca));
-        quizData.add(new Questions(R.string.q10q, R.string.q10a1, R.string.q10a2, R.string.q10a3, R.string.q10ca));
 
         mCheckbox = new int[10];
 
@@ -66,14 +50,10 @@ public class Quiz extends AppCompatActivity {
         mCheckbox[4] = R.id.checkbox5;
         mCheckbox[5] = R.id.checkbox6;
         mCheckbox[6] = R.id.checkbox7;
-        mCheckbox[7] = R.id.checkbox8;
-        mCheckbox[8] = R.id.checkbox9;
-        mCheckbox[9] = R.id.checkbox10;
 
         /**
          * call the update method from the onCreate method to fill the view with the first question.
          */
-
         update();
     }
 

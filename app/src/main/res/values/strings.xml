@@ -9,14 +9,14 @@
     + " number of questions answered correct" + "congratulations_part3" -->
     <string name="congratulations_part1">Congratulations </string>
     <string name="congratulations_part2">You answered </string>
-    <string name="congratulations_part3"> out of 13 correct</string>
+    <string name="congratulations_part3">out of 10 correct.</string>
 
     <string name="bonus_question">Well done so far!\n\nHere are three bonus questions to really test your knowledge of Bruce Springsteen.</string>
     <string name="bonus_question_1">In which city was Bruce Springsteen born?</string>
-    <string name="bonus_question_2">How many albums did Bruce Springsteen?</string>
+    <string name="bonus_question_2">How many albums did Bruce Springsteen make?</string>
     <string name="to_results">To the results!</string>
     <string name="check">check!</string>
-    <string name="bonus_question_3">Whicht of these album are made by Bruce?</string>
+    <string name="bonus_question_3">Which of these albums are made by Bruce?</string>
     // These are the questions
 
     //Question 1
@@ -61,24 +61,13 @@
     <string name="q7a2">Tunnel Of Love</string>
     <string name="q7a3">Dancing In The Dark</string>
     <string name="q7ca">Human Touch</string>
-    // Question 8
-    <string name="q8q">Question 8: \n \nYou end up like a dog that\'s been beat too much</string>
-    <string name="q8a1">Streets of Philadelphia</string>
-    <string name="q8a2">War</string>
-    <string name="q8a3">Born In The USA</string>
-    <string name="q8ca">Born In The USA</string>
-    // Question 9
-    <string name="q9q">Question 9: \n \nNo wedding day smiles, no walk down the aisle</string>
-    <string name="q9a1">Cover Me</string>
-    <string name="q9a2">Waitin\' On A Sunny Day</string>
-    <string name="q9a3">The River</string>
-    <string name="q9ca">The River</string>
-    // Question 10
-    <string name="q10q">Question 10: \n \nI saw you last night, out on the edge of town</string>
-    <string name="q10a1">Brilliant Disguise</string>
-    <string name="q10a2">One Step Up</string>
-    <string name="q10a3">Fade Away</string>
-    <string name="q10ca">Brilliant Disguise</string>
-
-
+    //Album question
+    <string name="album1">The River</string>
+    <string name="album2">Joshua Tree</string>
+    <string name="album3">Human Touch</string>
+    <string name="album4">The Wall</string>
+    //Radio Button Question
+    <string name="radio1">New York</string>
+    <string name="radio2">New Jersey</string>
+    <string name="radio3">New Foundland</string>
 </resources>
