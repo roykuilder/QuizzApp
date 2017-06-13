@@ -5,7 +5,7 @@
     <string name="take_the_quiz">Take the quiz!</string>
     <string name="welcome">Welcome, \n \nHere are ten lines from the repertoire of Bruce Springsteen. Can you guess the song?</string>
     <string name="mail_results">Send results!</string>
-    <!-- Final text follow this patters "congratualations_part1" + "player Name" + "congratulations_part2"
+    <!-- Final text follow this patters "congratulations_part1" + "player Name" + "congratulations_part2"
     + " number of questions answered correct" + "congratulations_part3" -->
     <string name="congratulations_part1">Congratulations </string>
     <string name="congratulations_part2">You answered </string>

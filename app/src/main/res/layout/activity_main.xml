@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
     <ImageView
         android:id="@+id/background_image"
@@ -11,42 +12,48 @@
         android:scaleType="centerCrop"
         android:src="@drawable/bruce1" />
 
-    <LinearLayout
-        android:id="@+id/activity_main"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        tools:context="com.example.android.quizzapp.MainActivity">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/main_view"
-            style="@style/question"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:text="@string/welcome" />
+            android:layout_height="wrap_content">
 
-        <EditText
-            android:id="@+id/name_input"
-            style="@style/answer"
-            android:layout_height="wrap_content"
-            android:hint="@string/name" />
+            <LinearLayout
+                android:id="@+id/activity_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:context="com.example.android.quizzapp.MainActivity">
 
-        <EditText
-            android:id="@+id/email_input"
-            style="@style/answer"
-            android:layout_height="wrap_content"
-            android:hint="@string/email"
-            android:inputType="textEmailAddress" />
+                <TextView
+                    android:id="@+id/main_view"
+                    style="@style/question"
+                    android:layout_width="match_parent"
+                    android:text="@string/welcome" />
 
+                <EditText
+                    android:id="@+id/name_input"
+                    style="@style/answer"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/name" />
 
-    </LinearLayout>
+                <EditText
+                    android:id="@+id/email_input"
+                    style="@style/answer"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress" />
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="24dp"
-        android:text="@string/take_the_quiz" />
-
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="24dp"
+                    android:text="@string/take_the_quiz" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
 </RelativeLayout>

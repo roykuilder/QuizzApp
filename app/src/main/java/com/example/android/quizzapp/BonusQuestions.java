@@ -114,7 +114,7 @@ public class BonusQuestions extends AppCompatActivity {
     }
 
     private void scoreCheckboxQuestion() {
-        if (albumCheckBox1.isChecked() && albumCheckBox3.isChecked()) {
+        if (albumCheckBox1.isChecked() && albumCheckBox3.isChecked() && !albumCheckBox2.isChecked() && !albumCheckBox4.isChecked()){
             bonusQuestionScore++;
         }
     }

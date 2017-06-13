@@ -17,7 +17,7 @@ public class Questions {
     }
 
     /**
-     * There are the getter methods.
+     * These are the getter methods.
      */
 
     public int getQuestion() {

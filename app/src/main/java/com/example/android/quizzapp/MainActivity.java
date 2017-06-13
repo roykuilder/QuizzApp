@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
         /**
          * This is the onClick method for the Take the quiz button. It stores the values given in the EditText views.
          */
